@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Eventos - Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <p>Bem-vindo,
+            <%- usuario.nome %>
+        </p>
+        <h1>Cadastro de Eventos</h1>
+        <h4>Forneça os dados para o cadastro</h4>
+    </header>
+    <section>
+        <form action="/novoEvento" method="post">
+            <div class="col-sm-4">
+                <label for="descricao" class="col-form-label">Descrição</label>
+                <input type="text" name="evento[descricao]" class="form-control" placeholder="Descrição">
+            </div>
+
+            <div class="col-sm-4">
+                <label for="data" class="col-form-label">Data do Evento</label>
+                <input type="text" name="evento[data]" class="form-control" placeholder="Data">
+            </div>
+            <div class="col-sm-4">
+                <label for="resp" class="col-form-label">Data do Evento</label>
+                <input type="text" name="evento[responsavel]" class="form-control" placeholder="Responsável">
+            </div>
+            <div class="col-sm-4">
+                <button type="submit" class="btn btn-primary topbuffer">Enviar</button>
+            </div>
+
+            <br>
+
+        </form>
+    </section>
+    <footer class="footer">
+        <small>Sistema de Cadastro de Eventos</small>
+    </footer>
+</body>
+
+</html>

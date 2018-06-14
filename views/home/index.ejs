@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Eventos - Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div>
+                <header class="panel-body">
+                    <h1>Login</h1>
+                    <h4>Entre com suas credenciais</h4>
+                </header>
+            </div>
+            <br>
+            <section class="panel-body">
+                <form action="/login" method="post" class="form-group">
+
+                    <div class="col-sm-4">
+                        <label for="nome" class="col-form-label">Nome</label>
+                        <input type="text" name="usuario[nome]" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="senha" class="col-form-label">Senha</label>
+                        <input type="password" name="usuario[senha]" class="form-control" placeholder="Senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary topbuffer">Login</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <small>Sistema de Cadastro de Eventos</small>
+    </footer>
+</body>
+
+</html>
