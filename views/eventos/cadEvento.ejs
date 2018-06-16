@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <section>
+        <a class="btn btn-primary btn-sm logout" href='/logout'>Logout</a>
+    </section>
     <header class="header">
         <p>Bem-vindo,
             <%- usuario.nome %>
@@ -31,7 +34,7 @@
                 <input type="text" name="evento[data]" class="form-control" placeholder="Data">
             </div>
             <div class="col-sm-4">
-                <label for="resp" class="col-form-label">Data do Evento</label>
+                <label for="resp" class="col-form-label">Responsável</label>
                 <input type="text" name="evento[responsavel]" class="form-control" placeholder="Responsável">
             </div>
             <div class="col-sm-4">

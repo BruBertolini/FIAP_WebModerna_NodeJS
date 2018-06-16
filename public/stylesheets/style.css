@@ -26,3 +26,7 @@ a {
   border-radius: 0 !important;
 }
 
+.logout {
+  position: relative;
+  float: right;
+}

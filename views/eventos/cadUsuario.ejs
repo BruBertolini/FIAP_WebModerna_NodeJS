@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <section>
+        <a class="btn btn-primary btn-sm logout" href='/logout'>Logout</a>
+    </section>
     <header class="header">
         <p>Bem-vindo,
             <%- usuario.nome %>
@@ -21,7 +24,7 @@
     </header>
     <section>
         <form action="/novoUsuario" method="post">
-            <div class="col-sm-4"> 
+            <div class="col-sm-4">
                 <label for="nome" class="col-form-label">Nome</label>
                 <input type="text" name="usuario[nome]" class="form-control" placeholder="Nome">
             </div>

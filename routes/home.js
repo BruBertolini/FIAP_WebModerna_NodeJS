@@ -3,5 +3,7 @@ module.exports = function (app) {
     app.get('/', home.index);
     app.post('/login', home.login);
     app.get('/logout', home.logout); 
+
+    app.post('/novoUsuario', home.novoUsuario); 
    
    }; 

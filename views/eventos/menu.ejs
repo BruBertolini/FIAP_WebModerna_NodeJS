@@ -12,8 +12,12 @@
 </head>
 
 <body>
+    <section>
+        <a class="btn btn-primary btn-sm logout" href='/logout'>Logout</a>
+    </section>
     <header class="page-header">
-        <h1>Bem-vindo,<%- usuario.nome %>
+        <h1>Bem-vindo,
+            <%- usuario.nome %>
         </h1>
         <br />
         <h3>Menu de Opções</h3>
@@ -36,9 +40,7 @@
     <br />
     <br />
 
-    <section>
-        <a class="btn btn-default" href='/logout'>Logout</a>
-    </section>
+
     <footer class="footer">
         <small>Sistema de Cadastro de Eventos</small>
     </footer>
